@@ -22,3 +22,21 @@
     font-size: 16px;
     line-height: 19px;
 }
+
+.questionOpen{
+    height: 131px;
+    background-color: #FFFFD5;
+    align-items: baseline;
+    position: relative;
+}
+
+.questionOpen h2{
+    font-size: 14px;
+}
+
+.questionOpen img{
+    width: 21px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}

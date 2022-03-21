@@ -2,19 +2,24 @@ import Slogo from "../../Components/Slogo";
 import './style.css';
 import Question from "./Question/Index";
 import ZapCount from "./ZapCount/Index";
+//import { useState } from "react/cjs/react.production.min";
+import { questions } from "../../Data/Data";
 
 export default function Zap(){
+
+
     return(
         <>
-            <header>  
+            <header className="top">  
                 <Slogo/>
             </header>
 
             <main className="questionsContainer">
-                <Question number={7}/>
-                <Question number={7} />
-                <Question number={7} />
-                <Question number={7} />
+                {
+                    questions.map((quest, index) => 
+                        <Question key={index} number={index+1} quest={quest.quest} res={quest.res}/>
+                    )
+                }
             </main>
 
             <ZapCount/>
