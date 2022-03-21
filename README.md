@@ -1,7 +1,7 @@
 #About the project
 
-##Deploy 
-[](https://github.com/Vitor7rs/ZapRecall/tree/main)
+## Deploy 
+https://github.com/Vitor7rs/ZapRecall/tree/main
 
 ##___________________________________________________
 
