@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home/Index";
-import Zap from "./Pages/Zap/Zap";
+import Zap from "./Pages/Zap/Index";
 
 
 export default function App(){
