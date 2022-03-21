@@ -7,3 +7,12 @@ header{
     align-items: center;
 
 }
+
+.questionsContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 27px;
+}
