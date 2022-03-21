@@ -86,3 +86,30 @@
 
     gap: 28px;
 }
+
+.right{
+    text-decoration-line: line-through;
+    color: #2FBE34;
+}
+
+.right h2{
+    color: #2FBE34;
+}
+
+.almostError{
+    text-decoration-line: line-through;
+    color:#FF922E
+}
+
+.almostError h2{
+    color: #FF922E;
+}
+
+.error{
+    text-decoration-line: line-through;
+    color: #FF3030;
+}
+
+.error h2{
+    color: #FF3030;
+}

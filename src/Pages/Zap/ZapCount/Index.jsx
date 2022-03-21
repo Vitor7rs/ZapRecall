@@ -1,9 +1,9 @@
 import './style.css';
 
-export default function ZapCount(){
+export default function ZapCount({totalQuests, playQuest}){
     return(
         <footer className='counter'>
-            <h2>CONTADOR</h2>
+            <h2>{playQuest}/{totalQuests} CONCLUÍDOS</h2>
         </footer>
     )
 }
