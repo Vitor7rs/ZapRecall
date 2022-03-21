@@ -3,7 +3,7 @@ import './style.css';
 import setinha from "../../../Assets/setinha.png";
 import { useState } from "react";
 
-export default function Question({number, quest, res, setCount, count}){
+export default function Question({number, quest, res, setCount, count, totalQuests, setFinal, final}){
    const [questStatus, setStatus] = useState("close");
    const [resultQuest, setResult] = useState("");
    
@@ -11,7 +11,12 @@ export default function Question({number, quest, res, setCount, count}){
    function processQuest(res){
         setStatus("answered");
         setResult(res);
-        setCount(count+=1);
+        setCount(count= [...count, res]);
+        if(count.length===totalQuests){
+            if(count.includes("error")){
+                setFinal("sad")
+            }else setFinal("happy")
+        }
    }
 
     return( 
@@ -23,13 +28,13 @@ export default function Question({number, quest, res, setCount, count}){
                 </div>
             }
             {questStatus === "open" &&
-                <div className={"question questionOpen"} onClick={()=>setStatus("res")}>
+                <div className={"question questionOpen"}>
                     <h2>{quest}</h2>
-                    <img src={setinha} alt="skip" /> 
+                    <img src={setinha} alt="skip" onClick={() => setStatus("res")}/> 
                 </div>
             }
             {questStatus === "res" &&
-                <div className={"question questionOpen res"}>
+                <div className={"question questionOpen res"} >
                     <h2>{res}</h2>
                     <div className="optionsContainer">
                         <div className="errorOption" onClick={() => processQuest("error") }><span>Não</span><span>lembrei</span></div>
@@ -41,7 +46,7 @@ export default function Question({number, quest, res, setCount, count}){
             {questStatus === "answered"  &&
                 <div className={`question answered ${resultQuest}`}>
                     <h2>Pergunta {number}</h2>
-                    {resultQuest === "error" && <BiXCircle/>}
+                    {resultQuest === "error" && <BiXCircle />}
                     {resultQuest === "almostError" && <BiHelpCircle />}
                     {resultQuest === "right" && <BiCheckCircle />}
                 </div>
