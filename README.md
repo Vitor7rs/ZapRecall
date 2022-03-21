@@ -1,7 +1,7 @@
 # About the project
 
 ## Deploy 
-https://github.com/Vitor7rs/ZapRecall/tree/main
+https://zap-recall-omega.vercel.app/zap
 
 # Getting Started with Create React App
 
