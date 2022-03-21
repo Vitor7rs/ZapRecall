@@ -3,11 +3,10 @@ import './style.css';
 import setinha from "../../../Assets/setinha.png";
 import { useState } from "react";
 
-export default function Question({number, quest, res, setCount, count, totalQuests, setFinal, final}){
+export default function Question({number, quest, res, setCount, count, totalQuests, setFinal}){
    const [questStatus, setStatus] = useState("close");
    const [resultQuest, setResult] = useState("");
    
-
    function processQuest(res){
         setStatus("answered");
         setResult(res);
