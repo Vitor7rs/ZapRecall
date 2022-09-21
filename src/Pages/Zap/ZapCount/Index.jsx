@@ -22,7 +22,6 @@ export default function ZapCount({totalQuests, playQuest, count, final}){
                     </div>
                     <p>Ainda faltam alguns... Mas não desanime!</p>
                 </div>}      
-            
             <h2>{playQuest}/{totalQuests} CONCLUÍDOS</h2>
             <div>
             
