@@ -1,9 +1,17 @@
 # About the project
+### Um teste de memória sobre conteúdos de REACT, no estilo "flash cards", com uma interface simples e prática.
 
 ## Deploy 
 https://zap-recall-omega.vercel.app/zap
 
+## Preview
 
+<div style="width:100%">
+  <img src="https://i.imgur.com/qj9gqxf.png" style="width: 450px; height: 600px;">
+  <img src="https://i.imgur.com/AzdYwWN.png" style="width: 450px; height: 600px;">
+  <img src="https://i.imgur.com/T1xlMzn.png" style="width: 450px; height: 600px;">
+  <img src="https://i.imgur.com/Y2LQTJ5.png" style="width: 450px; height: 600px;">
+</div>
 
 ## Available Scripts
 
